@@ -7,4 +7,4 @@ d = int(input('Quantos dias você ficou com o carro alugado? '))
 kmr = km * 0.15
 du = d * 60
 t = kmr + du
-print('Sua conta ficou em:\n {} Km utilizados = R$ {:.2f}\n {} dias utilizados = R$ {:.2f}\n Total = R$ {:.2f}'.format(km, kmr, d, du, t))rr
+print('Sua conta ficou em:\n {} Km utilizados = R$ {:.2f}\n {} dias utilizados = R$ {:.2f}\n Total = R$ {:.2f}'.format(km, kmr, d, du, t))
