@@ -13,6 +13,6 @@ nomeR = nomeC.replace(' ','')
 print(len(nomeR))
 nome = nomeC.split()
 pnome = nome[0]
-print(pnome)
+print(len(pnome))
 
 
