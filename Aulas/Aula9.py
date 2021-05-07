@@ -22,3 +22,38 @@ print(frase.count('o'))
 
 # ! Contador de caracteres, ja com fatiamento, ou seja, quantos 'o's dentro do escopo 0-13
 print(frase.count('o', 0, 13))
+
+# ! Indica a posição onde o termo procurado se inicia
+print(frase.find('deo'))
+
+# ! Retorno -1 significa que a string nao existe
+print(frase.find('Android'))
+
+# ! Informa se existe ou nao string - CaseSensitive
+print('Curso' in frase)
+
+# ! Substitui string
+print(frase.replace('Python', 'Android'))
+
+# ! Troca tudo que esta lower para upper vs-vs frase.lower
+print(frase.upper())
+print(frase.lower())
+
+# ! Troca tudo para minusculo, apenas a primeira maiuscula da frase
+print(frase.capitalize())
+
+# ! Troca tudo para minusculo, apenas a primeira maiuscula de cada PALAVRA
+print(frase.title())
+
+# ! Retira primeiros e ultimos "espaços" inuteis do texto
+print(frase.strip())
+
+# ! Retira primeiros e ultimos "espaços" inuteis do texto a partir da esqueda ou direita
+print(frase.rstrip())
+print(frase.lstrip())
+
+# ! Dividi a frase em varios indices
+print(frase.split())
+
+# ! Adiciona traços
+print('-'.join(frase))
