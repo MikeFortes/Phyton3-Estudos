@@ -21,5 +21,5 @@ if (y < menor):
     menor = y
 if (z < menor):
     menor = z
-
+    
 print('Menor: ', menor)

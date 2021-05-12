@@ -11,3 +11,6 @@ else:
     y = (10/100) * x
     x = x + y
     print('Seu novo salario sera: R${:.2f}'.format(x))
+    
+# ! Outra forma
+# novo = salario + ( salario * 15 / 100)
