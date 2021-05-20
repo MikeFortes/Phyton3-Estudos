@@ -6,13 +6,13 @@ print('Ola querido cliente! Para validarmos seu emprestimo, precisamos saber de 
 valor = float(input('Qual o valor da casa que você pretende comprar? R$ '))
 salario = float(input('Qual o seu salario? R$ '))
 tempo = int(input('Em quantos meses você pretende pagar esse imovel por completo? '))
-prestacao = valor / tempo
+prestacao = valor / (tempo * 12)
 x = (30/100) * salario
 if prestacao > x:
     print('As prestações ultrapassam 30% do seu salario, emprestimo negado')
 else:
     print('Emprestimo aprovado!!!')
-    
+
 
 
 
