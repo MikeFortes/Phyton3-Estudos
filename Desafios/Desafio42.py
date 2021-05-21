@@ -13,7 +13,7 @@ if ((b - c) < a < (b + c)) and ((a - c) < b < (a + c)) and ((a - b) < c < (a + b
         print('Triangulo Equilatero')
     elif (a == b or b == c or c == a) and (a != b or b != c or c != a):
         print('Triangulo Isosceles')
-    elif a != b or b != c or c != a:
+    elif a != b or b != c or c != a: # a != b != c != a
         print('Triangulo Escaleno')
 else:
     print('Sem triangulo pra você!')
