@@ -12,7 +12,11 @@ if p == 2:
     dis = x - ((5/100) * x)
     print('Você recebeu 5% de desconto, o valor a ser pago é R${:.2f}'.format(dis))
 if p == 3:
+    print('Divindo, cada parcela vai ser de R${:.2f}'.format(x / 2))
     print('O valor final sera R${:.2f}'.format(x))
 if p == 4:
     acre = x + ((20/100) * x)
+    print('Divindo, cada parcela vai ser de R${:.2f} COM JUROS'.format(acre / 4))
     print('Nessa forma de pagamento é aplicado 20% de juros, o valor a ser pago é R${:.2f}'.format(acre))
+else:
+    print('Opção Invalida!')

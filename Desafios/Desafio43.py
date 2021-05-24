@@ -12,7 +12,7 @@ imc = p / (a * a)
 print('Seu IMC é: {} Kg/m²'.format(imc))
 if imc < 18.5:
     print('Abaixo do peso ideal')
-elif imc >= 18.5 and imc < 25:
+elif imc >= 18.5 and imc < 25: # 18.5 <= imc < 25:
     print('Peso ideal')
 elif imc >= 25 and imc < 30:
     print('Sobrepeso')
