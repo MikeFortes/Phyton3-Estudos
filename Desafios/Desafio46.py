@@ -9,4 +9,4 @@ print('-=' * 20)
 for c in range (10, 0, -1):
     print(c)
     sleep(1)
-print('FELIZ ANO NOVOO !!! :tada: :tada: :tada:', use_aliases=True)    
+print(emoji.emojize('FELIZ ANO NOVOO !!! :tada: :tada: :tada:', use_aliases=True))
