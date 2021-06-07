@@ -3,9 +3,6 @@
 # ! Faça um programa que leia o peso e altura de uma pessoa, calcule o IMC e mostre seu Statu, de acordo com a tabela abaixo
 # ! Abaixo de 18.5: Abaixo do peso, Entre 18.5 e 25: Peso ideal, 25 até 30: Sobrepeso, 30 até 40: Obesidade, Acima de 40: Obesidade Morbida
 
-from io import IncrementalNewlineDecoder
-
-
 p = float(input('Digite seu peso em quilos: '))
 a = float(input('Digite sua altura em metros: '))
 imc = p / (a * a)
