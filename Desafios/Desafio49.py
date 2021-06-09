@@ -7,5 +7,5 @@ n = int(input('Digite um numero para saber sua tabuada: '))
 for c in range (0, 11):
     if c <= 10:
         x = c * n
-        print('{} x {} = {}'.format(n, c, x))
+        print('{} x {:2} = {}'.format(n, c, x))
 print('FIM DA TABUADA')
