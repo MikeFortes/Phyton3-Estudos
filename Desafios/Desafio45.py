@@ -11,7 +11,7 @@ print('''Suas opções:
 [ 0 ] - PEDRA
 [ 1 ] - PAPEL
 [ 2 ] - TESOURA''')
-x = int(input('Qual a sua jogada?' ))
+x = int(input('Qual a sua jogada? '))
 print('JO')
 sleep(1)
 print('KEN')
