@@ -5,15 +5,27 @@
 # ! Qual é o nome do homem mais velho
 # ! Quantas mulheres tem menos de 20 anos.
 
-listaNome = []
-listaIdade = []
-listaSexo = []
-for p in range(0, 4):
-    nome = str(input('Digite seu nome: ')).strip().capitaliz()
-    listaNome.append(nome)
-    idade = int(input('Digite sua idade: '))
-    listaIdade.append(idade)
-    sexo = str(input('Digite seu sexo (Masculino, Feminino): ')).strip().capitaliz()
-    listaSexo.append(sexo)
-media  = sum(listaIdade) / len(listaIdade)
-print('A média da idade do grupo é de {} anos'.format(media))
+SomaIdade = 0
+MediaIdade = 0
+MaiorIdade = 0
+NomeVelho = ''
+totmulher20 = 0
+for p in range(1, 5):
+    print('---- {} º PESSOA ----'.format(p))
+    nome = str(input('Nome: ')).strip().capitalize()
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]: ')).strip()
+    SomaIdade += idade
+    if p == 1 and sexo in 'Mm':
+        MaiorIdade = idade
+        NomeVelho = nome
+    if sexo in 'Mm' and idade > MaiorIdade:
+        MaiorIdade = idade
+        NomeVelho = nome
+    if sexo in 'Ff' and idade < 20:
+        totmulher20 +=1
+MediaIdade = SomaIdade / 4
+print('----- Calculando -----')
+print('A média de idade do grupo é de {} anos'.format(MediaIdade))
+print('O homem mais velho é o {} com {} anos de idade'.format(NomeVelho, MaiorIdade))
+print('Ao todo são {} mulheres com menos de 20 anos'.format(totmulher20))
